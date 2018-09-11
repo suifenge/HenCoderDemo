@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.suifeng.demo.hencoder.views.SimpleDrawView2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.suifeng.demo.hencoder.views.SimpleDrawView2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:paintStyle="stroke"
+        app:color="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        app:mHeight="300"
+        app:mWidth="600"
+        app:strokeWidth="30"/>
+
+    <com.suifeng.demo.hencoder.views.SimpleDrawView2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:mHeight="200"
+        app:mWidth="400"
+        app:round="true"
+        app:rx="50"
+        app:ry="50"/>
+
+    <com.suifeng.demo.hencoder.views.SimpleDrawView2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:mHeight="200"
+        app:mWidth="400"
+        app:round="true"
+        app:color="@color/colorAccent"
+        app:paintStyle="stroke"/>
+
+</LinearLayout>
