@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         mTitles.add("drawBitmap()")
         mTitles.add("drawText()")
         mTitles.add("HistogramView")
+        mTitles.add("TriangleView")
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_pie_chart_view))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_1))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_2))
@@ -49,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_8))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_9))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_histogram_view))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_10))
 
     }
 

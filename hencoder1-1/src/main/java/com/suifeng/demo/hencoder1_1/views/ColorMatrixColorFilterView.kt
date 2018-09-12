@@ -11,29 +11,25 @@ import com.suifeng.demo.hencoder1_1.R
  * @data 2018/9/7
  * @describe
  */
-class ComposeShaderView: View {
+class ColorMatrixColorFilterView: View {
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
+
+    private var bitmap: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.batman_logo)
 
     constructor(context: Context) : this(context, null)
 
     constructor(context: Context, attrs: AttributeSet?): this(context, attrs, -1)
 
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int): super(context, attrs, defStyleAttr) {
-        setLayerType(LAYER_TYPE_SOFTWARE, null)
-
-        val bitmap1 = BitmapFactory.decodeResource(context.resources, R.drawable.batman)
-        val shader1 = BitmapShader(bitmap1, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
-
-        val bitmap2 = BitmapFactory.decodeResource(context.resources, R.drawable.batman_logo)
-        val shader2 = BitmapShader(bitmap2, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
-
-        val shader = ComposeShader(shader1, shader2, PorterDuff.Mode.SRC_OVER)
-        paint.shader = shader
+        val colorMatrix = ColorMatrix()
+        colorMatrix.setSaturation(0f) // 0f - 1f
+        val colorMatrixColorFilter = ColorMatrixColorFilter(colorMatrix)
+        paint.colorFilter = colorMatrixColorFilter
     }
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        canvas?.drawCircle(200f, 200f, 200f, paint)
+        canvas?.drawBitmap(bitmap, 100f, 100f, paint)
     }
 }
