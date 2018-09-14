@@ -1,13 +1,12 @@
 package com.suifeng.demo.hencoder1_3
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.view.ViewPager
+import android.support.v7.app.AppCompatActivity
 import com.suifeng.demo.hencoder1_3.fragments.ViewFragment
 
 class MainActivity : AppCompatActivity() {
@@ -32,10 +31,30 @@ class MainActivity : AppCompatActivity() {
         mTitles.add("StaticLayout")
         mTitles.add("TextSize")
         mTitles.add("Typeface")
+        mTitles.add("FakeBold")
+        mTitles.add("StrikeThru")
+        mTitles.add("UnderLine")
+        mTitles.add("TextSkewX")
+        mTitles.add("TextScaleX")
+        mTitles.add("TextAlign")
+        mTitles.add("FontSpacing")
+        mTitles.add("MeasureText")
+        mTitles.add("TextBounds")
+        mTitles.add("FontMetrics")
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_1))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_2))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_3))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_4))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_5))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_6))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_7))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_8))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_9))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_10))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_11))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_12))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_13))
+        mFragments.add(ViewFragment.getViewFragment(R.layout.frag_14))
 
         mTitles.reverse()
         mFragments.reverse()
