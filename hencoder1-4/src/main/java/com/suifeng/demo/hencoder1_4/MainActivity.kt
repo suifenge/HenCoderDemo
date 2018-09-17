@@ -1,16 +1,15 @@
-package com.suifeng.demo.hencoder1_3
+package com.suifeng.demo.hencoder1_4
 
+import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.view.ViewPager
-import android.support.v7.app.AppCompatActivity
-import com.suifeng.demo.hencoder1_3.fragments.ViewFragment
+import com.suifeng.demo.hencoder1_4.fragments.ViewFragment
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var viewPager: ViewPager
     private lateinit var tabLayout: TabLayout
     private val mFragments = ArrayList<Fragment>()
@@ -27,20 +26,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFragments() {
-        mTitles.add("DrawText")
-        mTitles.add("StaticLayout")
-        mTitles.add("TextSize")
-        mTitles.add("Typeface")
-        mTitles.add("FakeBold")
-        mTitles.add("StrikeThru")
-        mTitles.add("UnderLine")
-        mTitles.add("TextSkewX")
-        mTitles.add("TextScaleX")
-        mTitles.add("TextAlign")
-        mTitles.add("FontSpacing")
-        mTitles.add("MeasureText")
-        mTitles.add("TextBounds")
-        mTitles.add("FontMetrics")
+        mTitles.add("ClipRectView")
+        mTitles.add("ClipPathView")
+        mTitles.add("TranslateView")
+        mTitles.add("ScaleView")
+        mTitles.add("RotateView")
+        mTitles.add("SkewView")
+        mTitles.add("SkewView")
+        mTitles.add("MatrixTranslateView")
+        mTitles.add("MatrixScaleView")
+        mTitles.add("MatrixRotateView")
+        mTitles.add("MatrixSkewView")
+        mTitles.add("CameraRotateView")
+        mTitles.add("CameraRotateFixedView")
+        mTitles.add("CameraRotateHittingFaceView")
+        mTitles.add("FlipboardView")
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_1))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_2))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_3))
@@ -55,6 +55,9 @@ class MainActivity : AppCompatActivity() {
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_12))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_13))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_14))
+
+        mTitles.reverse()
+        mFragments.reverse()
     }
 
     private inner class FragmentPagerAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdapter(fragmentManager) {
