@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HenCoder1-6</string>
+    <string name="ms_with_value">%dms</string>
+    <string-array name="interpolators">
+        <item>AccelerateDecelerateInterpolator</item>
+        <item>LinearInterpolator</item>
+        <item>AccelerateInterpolator</item>
+        <item>DecelerateInterpolator</item>
+        <item>AnticipateInterpolator</item>
+        <item>OvershootInterpolator</item>
+        <item>AnticipateOvershootInterpolator</item>
+        <item>BounceInterpolator</item>
+        <item>CycleInterpolator</item>
+        <item>PathInterpolator</item>
+        <item>FastOutLinearInInterpolator</item>
+        <item>FastOutSlowInInterpolator</item>
+        <item>LinearOutSlowInInterpolator</item>
+    </string-array>
+</resources>
