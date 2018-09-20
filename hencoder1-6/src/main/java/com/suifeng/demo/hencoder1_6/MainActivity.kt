@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.view.ViewPager
+import com.suifeng.demo.hencoder1_6.fragments.PuzzleFragment
 import com.suifeng.demo.hencoder1_6.fragments.ViewFragment
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         mTitles.add("MultiProperties")
         mTitles.add("Duration")
         mTitles.add("Interpolator")
+        mTitles.add("Puzzle")
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_1))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_2))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_3))
@@ -40,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_5))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_6))
         mFragments.add(ViewFragment.getViewFragment(R.layout.frag_7))
+        mFragments.add(PuzzleFragment())
 
         mTitles.reverse()
         mFragments.reverse()
